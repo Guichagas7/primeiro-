@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Mundi | Cafeteria com cafés do mundo inteiro</title>
+  <meta name="description" content="Uma cafeteria com cafés de vários países: do espresso italiano ao Jebena Buna etíope, cada xícara preparada do jeito tradicional de onde nasceu.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display:ital@0;1&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== FAIXA DE PAÍSES ========== -->
+  <div class="faixa" aria-hidden="true">
+    <div class="faixa__trilho">
+      <span class="faixa__grupo">ITÁLIA   ✦   TURQUIA   ✦   VIETNÃ   ✦   MÉXICO   ✦   BRASIL   ✦   ETIÓPIA   ✦   IRLANDA   ✦   GRÉCIA   ✦   ITÁLIA   ✦   TURQUIA   ✦   VIETNÃ   ✦   MÉXICO   ✦   BRASIL   ✦   ETIÓPIA   ✦   IRLANDA   ✦   GRÉCIA   ✦   </span>
+      <span class="faixa__grupo">ITÁLIA   ✦   TURQUIA   ✦   VIETNÃ   ✦   MÉXICO   ✦   BRASIL   ✦   ETIÓPIA   ✦   IRLANDA   ✦   GRÉCIA   ✦   ITÁLIA   ✦   TURQUIA   ✦   VIETNÃ   ✦   MÉXICO   ✦   BRASIL   ✦   ETIÓPIA   ✦   IRLANDA   ✦   GRÉCIA   ✦   </span>
+    </div>
+  </div>
+
+  <!-- ========== CABEÇALHO ========== -->
+  <header class="cabecalho">
+
+    <!-- Informação 1 e Informação 2 (somem no celular) -->
+    <div class="cabecalho__infos">
+      <div class="info">
+        <span class="info__icone" aria-hidden="true">🕐</span>
+        <div>
+          <strong>Horário</strong>
+          <span>Seg a Sáb, 8h às 20h</span>
+        </div>
+      </div>
+
+      <div class="info">
+        <span class="info__icone" aria-hidden="true">📍</span>
+        <div>
+          <strong>Endereço</strong>
+          <span>Rua das Flores, 123</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== NAVEGAÇÃO ========== -->
+    <div class="nav">
+      <a href="#" class="logo" aria-label="Café Mundi, página inicial">
+        <span class="logo__selo" aria-hidden="true">☕</span>
+        <span class="logo__nome">Café Mundi</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Menu principal">
+        <a href="#" aria-current="page">Início</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#origens">Origens</a>
+        <a href="#faq">Dúvidas</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <a href="#contato" class="btn btn--escuro">Reservar mesa →</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero">
+      <div class="hero__texto">
+        <span class="status">Seg a Sáb · 8h às 20h</span>
+
+        <h1>
+          <span>Dê a volta</span>
+          <span>ao mundo</span>
+          <span><em>numa xícara.</em></span>
+        </h1>
+
+        <p class="hero__lead">
+          Uma cafeteria com cafés de vários países: do espresso italiano ao
+          Jebena Buna etíope, cada xícara preparada do jeito tradicional de
+          onde nasceu.
+        </p>
+
+        <div class="hero__botoes">
+          <a href="#cardapio" class="btn btn--terra">Ver cardápio →</a>
+          <a href="#origens" class="link-sublinhado">Conhecer as origens</a>
+        </div>
+      </div>
+
+      <div class="composicao" aria-hidden="true">
+        <div class="composicao__sol"></div>
+
+        <div class="composicao__arco">
+          <img src="images/hero.jpg" alt="Teto da cafeteria coberto por bandeiras de vários países">
+        </div>
+
+        <div class="cartao-embarque">
+          <div class="cartao-embarque__topo">
+            <span>Cartão de embarque</span>
+            <span class="cartao-embarque__aviao">✈</span>
+          </div>
+
+          <div class="cartao-embarque__rota">
+            <div>
+              <span class="rotulo-mini">De</span>
+              <strong>Sua mesa</strong>
+            </div>
+            <span class="cartao-embarque__seta">→</span>
+            <div>
+              <span class="rotulo-mini">Para</span>
+              <strong>Etiópia</strong>
+            </div>
+          </div>
+
+          <div class="cartao-embarque__linha"></div>
+
+          <div class="cartao-embarque__base">
+            <div>
+              <span class="rotulo-mini">Xícara</span>
+              <b>Jebena Buna</b>
+            </div>
+            <div class="barras">
+              <i style="--w:3px"></i><i style="--w:2px"></i><i style="--w:4px"></i>
+              <i style="--w:2px"></i><i style="--w:2px"></i><i style="--w:4px"></i>
+              <i style="--w:3px"></i><i style="--w:2px"></i><i style="--w:3px"></i>
+              <i style="--w:4px"></i><i style="--w:2px"></i><i style="--w:3px"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="carimbo">
+          <span class="carimbo__nome">Café Mundi</span>
+          <span class="carimbo__estrelas">★ ★ ★</span>
+          <span class="carimbo__origem">Origem</span>
+          <span class="carimbo__cert">certificada</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ORIGENS ========== -->
+    <section class="origens" id="origens">
+      <div class="origens__topo">
+        <div>
+          <p class="rotulo rotulo--mostarda">Origens</p>
+          <h2>
+            <span>Seis origens,</span>
+            <em>seis personalidades.</em>
+          </h2>
+        </div>
+        <p class="origens__texto">
+          Cada grão carrega o clima, o solo e a história da sua região.
+          Escolha pelo sabor que combina com o seu dia.
+        </p>
+      </div>
+
+      <div class="tiles">
+
+        <article class="tile tile--italia">
+          <p class="tile__n">01</p>
+          <div class="tile__foto">
+            <img src="images/italia.jpg" alt="Espresso e cappuccino">
+          </div>
+          <h3 class="tile__nome">
+            <span class="tile__pais">Itália</span>
+            <span class="tile__prep">Espresso &amp; Cappuccino</span>
+          </h3>
+        </article>
+
+        <article class="tile tile--turquia">
+          <p class="tile__n">02</p>
+          <div class="tile__foto">
+            <img src="images/turquia.jpg" alt="Café turco">
+          </div>
+          <h3 class="tile__nome">
+            <span class="tile__pais">Turquia</span>
+            <span class="tile__prep">Türk Kahvesi</span>
+          </h3>
+        </article>
+
+        <article class="tile tile--vietna">
+          <p class="tile__n">03</p>
+          <div class="tile__foto">
+            <img src="images/vietna.jpg" alt="Café vietnamita com leite condensado">
+          </div>
+          <h3 class="tile__nome">
+            <span class="tile__pais">Vietnã</span>
+            <span class="tile__prep">Cà phê sữa đá</span>
+          </h3>
+        </article>
+
+        <article class="tile tile--mexico">
+          <p class="tile__n">04</p>
+          <div class="tile__foto">
+            <img src="images/mexico.jpg" alt="Café de olla">
+          </div>
+          <h3 class="tile__nome">
+            <span class="tile__pais">México</span>
+            <span class="tile__prep">Café de Olla</span>
+          </h3>
+        </article>
+
+        <article class="tile tile--brasil">
+          <p class="tile__n">05</p>
+          <div class="tile__foto">
+            <img src="images/brasil.jpg" alt="Cafezinho brasileiro">
+          </div>
+          <h3 class="tile__nome">
+            <span class="tile__pais">Brasil</span>
+            <span class="tile__prep">Cafezinho / Pingado</span>
+          </h3>
+        </article>
+
+        <article class="tile tile--etiopia">
+          <p class="tile__n">06</p>
+          <div class="tile__foto">
+            <img src="images/etiopia.jpg" alt="Cerimônia do café etíope">
+          </div>
+          <h3 class="tile__nome">
+            <span class="tile__pais">Etiópia</span>
+            <span class="tile__prep">Jebena Buna</span>
+          </h3>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ========== CARDÁPIO ========== -->
+    <section class="cardapio" id="cardapio">
+      <div class="cardapio__topo">
+        <div>
+          <p class="rotulo rotulo--terra">Cardápio</p>
+          <h2>
+            <span>O mundo inteiro</span>
+            <em>no seu cardápio.</em>
+          </h2>
+        </div>
+
+        <ul class="legenda" aria-label="Legenda das temperaturas">
+          <li class="tag tag--quente">Quente</li>
+          <li class="tag tag--gelado">Gelado</li>
+        </ul>
+      </div>
+
+      <div class="cardapio__colunas">
+
+        <div class="coluna-cardapio">
+
+          <article class="item">
+            <span class="item__n">01</span>
+            <div class="item__corpo">
+              <div class="item__topo">
+                <h3>Espresso &amp; Cappuccino</h3>
+                <div class="item__tags">
+                  <span class="tag tag--pais">Itália</span>
+                  <span class="tag tag--quente">Quente</span>
+                </div>
+              </div>
+              <p>Café extraído sob alta pressão em dose curta. O cappuccino (espresso com leite e espuma) é consumido tradicionalmente apenas de manhã.</p>
+            </div>
+          </article>
+
+          <article class="item">
+            <span class="item__n">02</span>
+            <div class="item__corpo">
+              <div class="item__topo">
+                <h3>Türk Kahvesi</h3>
+                <div class="item__tags">
+                  <span class="tag tag--pais">Turquia</span>
+                  <span class="tag tag--quente">Quente</span>
+                </div>
+              </div>
+              <p>Café moído em pó finíssimo, fervido com água e açúcar em uma panela de cobre (cezve). Servido sem coar, com o pó no fundo da xícara.</p>
+            </div>
+          </article>
+
+          <article class="item">
+            <span class="item__n">03</span>
+            <div class="item__corpo">
+              <div class="item__topo">
+                <h3>Cà phê sữa đá</h3>
+                <div class="item__tags">
+                  <span class="tag tag--pais">Vietnã</span>
+                  <span class="tag tag--gelado">Gelado</span>
+                </div>
+              </div>
+              <p>Café forte coado em filtro individual de metal (phin), servido com leite condensado e gelo. Também existe a versão batida com gema de ovo e açúcar.</p>
+            </div>
+          </article>
+
+          <article class="item">
+            <span class="item__n">04</span>
+            <div class="item__corpo">
+              <div class="item__topo">
+                <h3>Café de Olla</h3>
+                <div class="item__tags">
+                  <span class="tag tag--pais">México</span>
+                  <span class="tag tag--quente">Quente</span>
+                </div>
+              </div>
+              <p>Café coado preparado em panela de barro com canela e piloncillo (rapadura de cana-de-açúcar não refinada).</p>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="coluna-cardapio">
+
+          <article class="item">
+            <span class="item__n">05</span>
+            <div class="item__corpo">
+              <div class="item__topo">
+                <h3>Cafezinho / Pingado</h3>
+                <div class="item__tags">
+                  <span class="tag tag--pais">Brasil</span>
+                  <span class="tag tag--quente">Quente</span>
+                </div>
+              </div>
+              <p>Café coado forte em pano ou papel, consumido puro (frequentemente já adoçado) ou misturado com um pingo de leite.</p>
+            </div>
+          </article>
+
+          <article class="item">
+            <span class="item__n">06</span>
+            <div class="item__corpo">
+              <div class="item__topo">
+                <h3>Jebena Buna</h3>
+                <div class="item__tags">
+                  <span class="tag tag--pais">Etiópia</span>
+                  <span class="tag tag--quente">Quente</span>
+                </div>
+              </div>
+              <p>Cerimônia tradicional onde os grãos verdes são torrados, moídos e fervidos na hora em um vaso de cerâmica de gargalo longo chamado jebena.</p>
+            </div>
+          </article>
+
+          <article class="item">
+            <span class="item__n">07</span>
+            <div class="item__corpo">
+              <div class="item__topo">
+                <h3>Irish Coffee</h3>
+                <div class="item__tags">
+                  <span class="tag tag--pais">Irlanda</span>
+                  <span class="tag tag--quente">Quente</span>
+                </div>
+              </div>
+              <p>Cocktail quente composto por café encorpado, uísque irlandês, açúcar mascavo e uma camada espessa de creme de leite batido por cima.</p>
+            </div>
+          </article>
+
+          <article class="item">
+            <span class="item__n">08</span>
+            <div class="item__corpo">
+              <div class="item__topo">
+                <h3>Frappé</h3>
+                <div class="item__tags">
+                  <span class="tag tag--pais">Grécia</span>
+                  <span class="tag tag--gelado">Gelado</span>
+                </div>
+              </div>
+              <p>Café solúvel batido energicamente com água gelada, açúcar e gelo até formar uma espuma densa e cremosa.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVIÇOS / DESTAQUES (nova) ========== -->
+    <section class="servicos" id="servicos" aria-labelledby="servicos-titulo">
+      <div class="servicos__topo">
+        <p class="rotulo rotulo--mostarda">Serviços</p>
+        <h2 id="servicos-titulo">
+          <span>Mais do que um café,</span>
+          <em>uma experiência.</em>
+        </h2>
+      </div>
+
+      <div class="servicos__grade">
+
+        <article class="servico">
+          <span class="servico__icone" aria-hidden="true">🌍</span>
+          <h3>Degustação ao redor do mundo</h3>
+          <p>Escolha três origens do cardápio e prove lado a lado, do espresso italiano ao café coado brasileiro, com as notas de sabor explicadas a cada xícara.</p>
+          <a href="#cardapio" class="servico__link">Ver o cardápio →</a>
+        </article>
+
+        <article class="servico servico--terra">
+          <span class="servico__icone" aria-hidden="true">📦</span>
+          <h3>Grãos para levar</h3>
+          <p>Leve para casa os mesmos grãos das nossas origens (Brasil, Colômbia, Etiópia, Quênia, Indonésia e Costa Rica), moídos do jeito que combina com o seu preparo.</p>
+          <a href="#origens" class="servico__link">Conhecer as origens →</a>
+        </article>
+
+        <article class="servico servico--petroleo">
+          <span class="servico__icone" aria-hidden="true">🔥</span>
+          <h3>Cerimônia do café</h3>
+          <p>Acompanhe o Jebena Buna na sua mesa: grãos verdes torrados, moídos e fervidos na hora, do jeito tradicional etíope.</p>
+          <a href="#contato" class="servico__link">Reservar uma mesa →</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ========== PERGUNTAS FREQUENTES ========== -->
+    <section class="faq" id="faq" aria-labelledby="faq-titulo">
+      <div class="faq__topo">
+        <p class="rotulo rotulo--terra">Perguntas frequentes</p>
+        <h2 id="faq-titulo">
+          <span>Ficou com</span>
+          <em>alguma dúvida?</em>
+        </h2>
+        <p class="faq__texto">Toque em uma pergunta para ver a resposta.</p>
+      </div>
+
+      <div class="faq__lista">
+
+        <details class="faq__item">
+          <summary>De onde vêm os grãos de café do Café Mundi?</summary>
+          <p>Reunimos grãos de diferentes regiões produtoras do mundo, como Brasil, Colômbia, Etiópia, Quênia, Indonésia e Costa Rica. Cada origem tem seu próprio perfil de sabor, que vai do achocolatado ao floral e cítrico.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary>Qual é a diferença entre espresso e cappuccino?</summary>
+          <p>O espresso é o café extraído sob alta pressão em dose curta. O cappuccino leva espresso, leite e espuma e, na Itália, costuma ser tomado só de manhã.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary>O que é o Türk Kahvesi, o café turco?</summary>
+          <p>É um café moído em pó finíssimo, fervido com água e açúcar em uma panela de cobre chamada cezve. Ele é servido sem coar, por isso o pó fica no fundo da xícara.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary>Vocês servem café gelado?</summary>
+          <p>Sim! O cà phê sữa đá, do Vietnã, é um café forte coado em filtro de metal (phin) e servido com leite condensado e gelo. O frappé grego também é gelado: café solúvel batido com água gelada e açúcar até formar uma espuma cremosa.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary>Como funciona a cerimônia do café etíope?</summary>
+          <p>No Jebena Buna, os grãos verdes são torrados, moídos e fervidos na hora em um vaso de cerâmica de gargalo longo, chamado jebena. Você pode acompanhar tudo da sua mesa. Reserve com antecedência.</p>
+        </details>
+
+      </div>
+    </section>
+
+    <!-- ========== CHAMADA PARA AÇÃO (nova) ========== -->
+    <section class="cta" aria-labelledby="cta-titulo">
+      <div class="cta__caixa">
+        <div class="cta__texto">
+          <p class="rotulo rotulo--mostarda">Venha para a mesa</p>
+          <h2 id="cta-titulo">Reserve sua mesa e comece a <em>volta ao mundo.</em></h2>
+          <p class="cta__lead">
+            Cada xícara conta a história de um país. Reserve com antecedência,
+            conheça nossos cafés e deixe a gente escolher com você a origem
+            que combina com o seu dia.
+          </p>
+        </div>
+
+        <div class="cta__acoes">
+          <a href="#contato" class="btn btn--cta">Reservar mesa →</a>
+          <a href="#cardapio" class="cta__link">ou veja o cardápio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== VISITA / LOCALIZAÇÃO ========== -->
+    <section class="visita" id="contato">
+      <div class="visita__titulo">
+        <p class="rotulo rotulo--terra">Venha nos visitar</p>
+        <h2>Onde estamos?</h2>
+      </div>
+
+      <!-- display: grid com duas colunas: mapa | informações -->
+      <div class="visita__grade">
+        <div class="mapa">
+          <div class="mapa__moldura"></div>
+          <div class="mapa__cartao">
+            <img src="mapa.svg" alt="Ilustração de mapa mostrando a localização do Café Mundi na Rua das Flores">
+          </div>
+        </div>
+
+        <div class="visita__info">
+          <h3 class="visita__endereco">Rua das Flores, 123</h3>
+          <p class="visita__cidade">Centro · União da Vitória – PR · CEP 84600-000</p>
+
+          <dl class="visita__lista">
+            <div><dt>Horário</dt><dd>Seg a Sáb, 8h às 20h</dd></div>
+            <div><dt>Referência</dt><dd>Próximo à praça central</dd></div>
+            <div><dt>Estacionamento</dt><dd>Vagas na rua e bicicletário</dd></div>
+            <div><dt>Telefone</dt><dd><a href="tel:+5542999990000">(42) 99999-0000</a></dd></div>
+            <div><dt>E-mail</dt><dd><a href="mailto:contato@cafemundi.com">contato@cafemundi.com</a></dd></div>
+          </dl>
+
+          <div class="visita__botoes">
+            <a href="#" class="btn btn--escuro btn--grande">Como chegar →</a>
+            <a href="#" class="btn btn--contorno">Chamar no WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== RODAPÉ ========== -->
+  <footer class="rodape">
+    <div class="rodape__colunas">
+
+      <div class="rodape__marca">
+        <div class="logo logo--rodape">
+          <span class="logo__selo" aria-hidden="true">☕</span>
+          <span class="logo__nome">Café Mundi</span>
+        </div>
+        <p>Cafés de vários países, preparados do jeito tradicional de cada lugar.</p>
+      </div>
+
+      <div class="rodape__coluna">
+        <h3>Navegar</h3>
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="#origens">Origens</a></li>
+          <li><a href="#faq">Dúvidas</a></li>
+          <li><a href="#">Política de privacidade</a></li>
+        </ul>
+      </div>
+
+      <div class="rodape__coluna">
+        <h3>Fale conosco</h3>
+        <ul>
+          <li><a href="tel:+5542999990000">(42) 99999-0000</a></li>
+          <li><a href="mailto:contato@cafemundi.com">contato@cafemundi.com</a></li>
+          <li>Rua das Flores, 123</li>
+        </ul>
+      </div>
+
+      <div class="rodape__coluna">
+        <h3>Redes sociais</h3>
+        <div class="redes">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="WhatsApp">WA</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="rodape__copy">
+      <p>© 2026 Café Mundi · Todos os direitos reservados</p>
+      <p>Feito com ☕ e muitos países</p>
+    </div>
+
+    <div class="gigante" aria-hidden="true"><span>Café Mundi</span></div>
+  </footer>
+
+</body>
+</html>
